@@ -1,0 +1,25 @@
+Functional Component
+A functional component is a JavaScript function that returns JSX.
+
+Example
+function Counter() {
+  return <h1>Hello</h1>;
+}
+
+---------------------------------------------------------------
+Class Component
+A class component is an ES6 class that extends React.Component.
+
+Example
+import React from "react";
+
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+
+  render() {
+    return <h1>Hello</h1>;
+  }
+}
