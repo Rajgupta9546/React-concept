@@ -1,0 +1,68 @@
+  What is components in react?
+  
+  Components are the building blocks of a React application.
+  A component is a reusable piece of UI that defines how a part of the screen looks and behaves.
+  components like functions that return HTML (JSX).
+------------------------------------------------------------------------
+Why Components?
+
+Reusability (use same UI multiple times)
+Easy to manage and maintain
+Clean and organized code
+Each component handles its own logic and UI
+
+Example
+(Function Component)
+function Welcome() {
+  return <h1>Hello, React!</h1>;
+}
+
+Welcome is a component
+It returns JSX
+Can be reused anywhere
+-------------------------------------------
+-> Two types of Components in React
+
+1.Function Components (Modern & Recommended)
+
+Simple JavaScript functions
+Can use Hooks (useState, useEffect, etc.)
+
+function Greeting() {
+  return <p>Welcome to React</p>;
+}
+
+️2. Class Components (Older Way)
+
+Use ES6 classes
+More code, no longer preferred
+
+import React from "react";
+
+class Greeting extends React.Component {
+  render() {
+    return <p>Welcome to React</p>;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
