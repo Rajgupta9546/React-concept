@@ -1,4 +1,4 @@
-Functional Component
+1.Functional Component
 A functional component is a JavaScript function that returns JSX.
 
 Example
@@ -7,7 +7,7 @@ function Counter() {
 }
 
 ---------------------------------------------------------------
-Class Component
+2.Class Component
 A class component is an ES6 class that extends React.Component.
 
 Example
