@@ -1,0 +1,18 @@
+What is State?
+
+State is a built-in object that stores data which can change over time inside a component.
+
+State is used when a component needs to update and re-render itself.
+
+Think of state like a variable inside a component that React watches.
+
+Key Points about State
+
+Managed inside the component
+
+Mutable (can be changed using setState / useState)
+
+When state changes, UI updates automatically
+
+Used for dynamic data (counter, form input, toggle, etc.)
+
