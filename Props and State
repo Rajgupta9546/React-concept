@@ -9,10 +9,26 @@ Think of state like a variable inside a component that React watches.
 Key Points about State
 
 Managed inside the component
-
 Mutable (can be changed using setState / useState)
-
 When state changes, UI updates automatically
-
 Used for dynamic data (counter, form input, toggle, etc.)
+
+------------------------------------------------------------------------------------------------------
+What is propes?
+
+Props (short for properties) are read-only objects used in React to pass data and configuration from a
+parent component to a child component.
+
+They allow components to be dynamic, reusable, and customizable, while maintaining 
+one-way data flow (from parent to child).
+
+Key Points about State
+
+Props are passed from parent to child
+Props are immutable (cannot be modified by the child)
+Props help in component reusability
+Props support unidirectional data flow
+
+
+
 
