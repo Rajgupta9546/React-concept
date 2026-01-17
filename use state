@@ -1,0 +1,40 @@
+import React, { useState } from "react";
+
+const characters = [
+  { id: 1, name: "Iron Man", type: "hero" },
+  { id: 2, name: "Captain America", type: "hero" },
+  { id: 3, name: "Thor", type: "hero" },
+  { id: 4, name: "Thanos", type: "villain" },
+  { id: 5, name: "Loki", type: "villain" },
+  { id: 6, name: "Ultron", type: "villain" }
+];
+
+function Tabs() {
+  const [activeTab, setActiveTab] = useState("hero");
+
+  const filteredCharacters = characters.filter(
+    (character) => character.type === activeTab
+  );
+
+  return (
+    <div>
+      <h2>Characters</h2>
+
+      <button onClick={() => setActiveTab("hero")}>
+        Show Heroes
+      </button>
+
+      <button onClick={() => setActiveTab("villain")}>
+        Show Villains
+      </button>
+
+      <ul>
+        {filteredCharacters.map((character) => (
+          <li key={character.id}>{character.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default Tabs;
