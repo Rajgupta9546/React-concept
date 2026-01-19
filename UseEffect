@@ -1,2 +1,22 @@
-The useEffect hook in React lets you perform side effects in functional components, such as fetching data, manipulating the DOM, or setting up event listeners.
-It is the functional component equivalent of lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount used in class components. 
+The useEffect hook in React lets you perform side effects in functional components, 
+such as fetching data, manipulating the DOM, or setting up event listeners.
+It is the functional component equivalent of lifecycle methods like componentDidMount,
+componentDidUpdate, and componentWillUnmount used in class components. 
+
+useEffect is a react hook used to handle side effect in function components.
+------------------------------------------------
+useeffect(() =>{
+    //side effect code
+return() => {
+     //cleanup code 
+};
+}, [dependencies]);
+-----------------------------------------------------
+common side effects
+api calls
+setinterval/settiime out
+dom update
+event listeners
+local storage
+subscriptions  
+
