@@ -1,0 +1,52 @@
+What is React.memo?
+
+React.memo is a Higher Order Component (HOC) that remembers the last rendered output of a component.
+It works only with functional components
+It does a shallow comparison of props
+If props are the same → no re-render
+
+React.memo is used to optimize functional components by preventing unnecessary re-renders using shallow comparison of props.
+---------------------------------------------
+Example
+Without memo
+----------------
+function Child({ count }) {
+  console.log("Child rendered");
+  return <h2>Count: {count}</h2>;
+}
+Every time the parent renders, Child also re-renders, even if count is the same.
+--------------------------------------------------------------------
+With memo
+import React from "react";
+
+const Child = React.memo(({ count }) => {
+  console.log("Child rendered");
+  return <h2>Count: {count}</h2>;
+});
+
+export default Child;
+
+Now  Child renders only when count changes 
+--------------------------------------------
+Use memo when:
+
+Your component renders often
+It receives the same props frequently
+It has heavy UI or expensive calculations
+--------------------------------------------
+1.Why do we use React.memo?
+Answer: We use React.memo to improve performance by avoiding re-rendering a component when its props remain the same.
+2.Which components can use React.memo?
+Answer: Only functional components can use React.memo.
+ 3.How does React.memo work internally?
+Answer: It performs a shallow comparison of previous and current props.
+        If props are equal → re-render is skipped.
+ 4.What is shallow comparison?
+Answer: Shallow comparison checks only the top-level values of props, not deep nested objects.
+5.Real-world use case of React.memo?
+Answer:  Large lists
+         Tables
+         Dashboards
+         Child components receiving same props repeatedly
+
+
