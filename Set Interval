@@ -1,21 +1,21 @@
-set interval is a javascript function used in react to run a piece of code respectedl after a fixed time interval.
+Set interval is a javascript function used in react to run a piece of code respectedl after a fixed time interval.
 React itself does not provide setinterval; we use the JavaScript setinterval inside React components.
 ------------------------------------------------------
-real world uses
-digital clock
-countdowwn timer
+Real world uses
+Digital clock
+Countdowwn timer
 live score update
-auto refresh data
+Auto refresh data
 -----------------------------------------------------------
 
-setinterval(function,time);
-function--> code to run repeatedly
-time--> time gap in milliseconds
+Setinterval(function,time);
+Function--> code to run repeatedly
+Time--> time gap in milliseconds
 (1000ms = 1 second)
 
 ---------------------------------------
-simple example(Javascript)
-setinterval(() =>{
+Simple example(Javascript)
+Setinterval(() =>{
 console.log("Hello Raj 1 second");
 }, 1000);
 ----------------------------------------
