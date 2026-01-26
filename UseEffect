@@ -5,18 +5,17 @@ componentDidUpdate, and componentWillUnmount used in class components.
 
 useEffect is a react hook used to handle side effect in function components.
 ------------------------------------------------
-useeffect(() =>{
+useeffect(()=>{
     //side effect code
-return() => {
-     //cleanup code 
+return()=> {
 };
 }, [dependencies]);
 -----------------------------------------------------
 common side effects
-api calls
+API calls
 setinterval/settiime out
-dom update
+DOM update
 event listeners
-local storage
-subscriptions  
+Local storage
+Subscriptions  
 
