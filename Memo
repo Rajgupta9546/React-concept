@@ -1,5 +1,6 @@
 What is React.memo?
 
+
 React.memo is a Higher Order Component (HOC) that remembers the last rendered output of a component.
 It works only with functional components
 It does a shallow comparison of props
@@ -36,14 +37,15 @@ It has heavy UI or expensive calculations
 --------------------------------------------
 1.Why do we use React.memo?
 Answer: We use React.memo to improve performance by avoiding re-rendering a component when its props remain the same.
-2.Which components can use React.memo?
+2. Which components can use React.memo?
 Answer: Only functional components can use React.memo.
- 3.How does React.memo work internally?
+ 3. How does React.memo work internally?
 Answer: It performs a shallow comparison of previous and current props.
         If props are equal → re-render is skipped.
- 4.What is shallow comparison?
+ 4. What is shallow comparison?
 Answer: Shallow comparison checks only the top-level values of props, not deep nested objects.
-5.Real-world use case of React.memo?
+5. Real-world use case of React.memo?
+
 Answer:  Large lists
          Tables
          Dashboards
