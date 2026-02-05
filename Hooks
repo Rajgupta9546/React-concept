@@ -1,0 +1,31 @@
+Hooks
+React Hooks are functions that let you use state and other React features in functional components—without writing class components.
+
+Hooks let you use React features in functional components.
+Common ones:
+useState → manage state
+useEffect → side effects (API calls, timers)
+useContext → global data
+--------------------------------------------------------
+Example
+useEffect(() => {
+  console.log("Component mounted");
+}, []);
+---------------------------------------------------------
+Most common React Hooks
+useState
+
+Used to manage state.
+
+-----------------------------------------------------
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      Count: {count}
+    </button>
+  );
+}
