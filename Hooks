@@ -6,6 +6,11 @@ Common ones:
 useState → manage state
 useEffect → side effects (API calls, timers)
 useContext → global data
+=========================================================
+Rules of Hooks (important ❗)
+Only call hooks at the top level
+Only call hooks inside React functions
+Don’t call hooks inside loops, conditions, or nested functions
 --------------------------------------------------------
 Example
 useEffect(() => {
@@ -29,3 +34,5 @@ function Counter() {
     </button>
   );
 }
+-------------------------------------------------------------
+
