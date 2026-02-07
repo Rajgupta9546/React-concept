@@ -1,0 +1,30 @@
+Lazy loading is a performance optimization technique where resources are loaded only when they are needed,
+instead of loading everything at once when the application starts.
+-------------------------------------------------------------------------
+Simple example
+
+Without lazy loading
+App loads
+All images, pages, and components load immediately
+Slow startup
+
+With lazy loading
+---------------------------
+App loads
+Only visible/required content loads
+Other content loads when you scroll or navigate
+Faster and smoother
+
+Real-life example 
+
+Think of a restaurant menu:
+You don’t cook every dish when the restaurant opens
+You cook only what customers order
+That’s lazy loading.
+-----------------------------------------
+Why lazy loading is important
+
+Faster initial page load 
+Less memory usage
+Better user experience
+Saves bandwidth
